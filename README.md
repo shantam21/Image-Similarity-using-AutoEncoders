@@ -4,10 +4,9 @@ The solution retreives top-n similar images for a test image.
 It also clusters the solution into K clusters. Here, k = 5
 
 ## Output
-For the test image 
-![Image of Yaktocat](https://github.com/shantam21/Image-Similarity-using-AutoEncoders/blob/master/data/test/2.jpg)
+For the test image ![Image of Yaktocat](https://github.com/shantam21/Image-Similarity-using-AutoEncoders/blob/master/data/test/2.jpg)
 The similar images are:
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+
 
 ## How to run the script
 The primary script is main.py. 
