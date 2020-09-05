@@ -44,5 +44,5 @@ if __name__ == '__main__':
     clustering_result = pd.DataFrame(columns = ['Image', 'Label'])
     clustering_result['Image'] = images
     clustering_result['Label'] = km.labels_
-    clustering_result.to_csv('clusters.csv')
+    clustering_result.to_csv('clusters.csv', index = None)
      
