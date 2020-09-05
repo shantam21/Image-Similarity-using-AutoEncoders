@@ -42,7 +42,6 @@ def plot_top_n_matches(no_of_matches,image_similarities):
     plt.show()
                
                
-
 if __name__ == '__main__':
     
     #  configurations for the script
@@ -51,15 +50,21 @@ if __name__ == '__main__':
     # Image directories
     train_directory = 'data/train'
     test_directory = 'data/test'
+    from_pretrained = True
     
     # Read images into np arrays
-    read_images(train_directory)
-    read_images(test_directory, test = True)
-    X = np.load("X.npy")
+    if from_pretrained == True:
+        read_images(test_directory, test = True)
+        X = np.load("X.npy")
+        model = load_model('trained_model.h5')
+    else:
+        read_images(train_directory)
+        read_images(test_directory, test = True)
+        X = np.load("X.npy")
+        train_model(X, epochs = 30, bs = 128, validation_split = 0.2)
+        model = load_model('trained_model.h5')
     
-    #  Model training
-    train_model(X, epochs = 1, bs = 64, validation_split = 0.2)
-    model = load_model('trained_model.h5')
+    
     encoded_data = model.predict(X)
     np.save('image_encodings.npy', encoded_data)
     
