@@ -4,8 +4,10 @@ The solution retreives top-n similar images for a test image.
 It also clusters the solution into K clusters. Here, k = 5
 
 ## Output
-For the test image ![test image 1](https://github.com/shantam21/Image-Similarity-using-AutoEncoders/blob/master/outputs/test1.jpg)
-The similar images are:![op image 1](https://github.com/shantam21/Image-Similarity-using-AutoEncoders/blob/master/outputs/op_1.png)
+![test image 1]
+(https://github.com/shantam21/Image-Similarity-using-AutoEncoders/blob/master/outputs/test1.jpg)
+![op image 1]
+(https://github.com/shantam21/Image-Similarity-using-AutoEncoders/blob/master/outputs/op_1.png)
 
 ## How to run the script
 The primary script is main.py. 
