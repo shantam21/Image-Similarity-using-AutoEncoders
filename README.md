@@ -10,7 +10,8 @@ It also clusters the solution into K clusters. Here, k = 5
 
 
 ## How to run the script
-The primary script is main.py. 
+The primary script is main.py.
+Due to the size upload limits if github, the encodings are not uploaded, so for the first time, user needs to run *main.py*. Subsequently, changing the flag *from_pretrained* = False, existing model features can be used to make predictions.
 1. Place the test image in 'data/test/' (make sure you place the single image)
 2. Change the parameter for no_of_matches in *main.py* according to requirement and run.
 3. For clustering, after executing *main.py* execute *clustering.py*
